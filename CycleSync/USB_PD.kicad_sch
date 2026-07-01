@@ -1,0 +1,52 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "0cca4c55-7a46-488d-82ba-2f27b1037584")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "USB_DM"
+		(shape bidirectional)
+		(at 86.36 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38f6cb8d-f44b-4e20-adfc-4116f1b9cfca")
+	)
+	(hierarchical_label "USB_DP"
+		(shape bidirectional)
+		(at 69.85 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a84ab3e-427a-4217-b45b-f65fb4a06dd3")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape bidirectional)
+		(at 34.29 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc8737e4-70ca-4f17-b043-5acfd1ffcd22")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 53.34 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f2f829a4-decd-43f4-9c33-4a4a2cd4e30b")
+	)
+)

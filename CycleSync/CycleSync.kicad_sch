@@ -2,9 +2,545 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid 3f2cc6af-e67b-48ad-b391-ff7619611bd8)
+	(uuid "3f2cc6af-e67b-48ad-b391-ff7619611bd8")
 	(paper "A4")
 	(lib_symbols)
+	(sheet
+		(at 123.19 66.04)
+		(size 24.13 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3d349b1e-1bc7-4ddf-90e2-c9fab86974ff")
+		(property "Sheetname" "MCU"
+			(at 123.19 65.3284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 123.19 104.7246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SCL" output
+			(at 123.19 76.2 180)
+			(uuid "f51be2fd-0f13-4bd1-86a5-0dc0f64b8b22")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 123.19 80.01 180)
+			(uuid "69ea715a-4567-41a0-9132-c5fca5681912")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_BCK" output
+			(at 123.19 83.82 180)
+			(uuid "f33d3196-73f6-4963-b9b7-23a796792795")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_DIN" input
+			(at 123.19 88.9 180)
+			(uuid "2911d8cd-e796-46bc-bd91-3770ecded72e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_DOUT" output
+			(at 123.19 92.71 180)
+			(uuid "2803b6d4-b0cd-4341-a293-b0b1b53ae607")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2S_LRCK" output
+			(at 123.19 96.52 180)
+			(uuid "1fe98a44-ce73-4e94-a74d-35a44d9449dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PPS_IN" input
+			(at 147.32 88.9 0)
+			(uuid "c0fa70e5-ebcb-441c-a231-0d02c49e14bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_RX" input
+			(at 147.32 82.55 0)
+			(uuid "13a70744-4de0-4a8b-b395-310908723b49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_TX" output
+			(at 147.32 74.93 0)
+			(uuid "31ada4d4-01dc-4dbe-88d9-f986ab762eea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 147.32 71.12 0)
+			(uuid "d78c1643-9f4f-4176-ab21-6dc95a6180ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 133.35 66.04 90)
+			(uuid "96e9576b-98b6-4157-bd09-5844232ed006")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 76.2)
+		(size 12.7 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5e4ef105-e22c-420b-b4f0-f48259b850dd")
+		(property "Sheetname" "GNSS_RF"
+			(at 160.02 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GNSS_RF.kicad_sch"
+			(at 160.02 94.5646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "UART_TX" input
+			(at 172.72 87.63 0)
+			(uuid "3fb5da85-3668-4b9a-a0e0-244f213e91cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "UART_RX" output
+			(at 163.83 76.2 90)
+			(uuid "f2a15919-a136-49ee-9f4e-ce63e9dc1235")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PPS_IN" output
+			(at 167.64 76.2 90)
+			(uuid "8e3ee11b-cb16-4826-b0bf-3d3712f56a78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 100.33)
+		(size 15.24 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5f3538da-ca0a-473f-9198-466d8964f21b")
+		(property "Sheetname" "USB_PD"
+			(at 76.7584 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB_PD.kicad_sch"
+			(at 93.2946 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 80.01 100.33 90)
+			(uuid "e0c99498-03b1-4cd4-b53e-c0e7142a474d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 81.6293 100.33 90)
+			(uuid "5d867903-0f79-43ef-97cf-c40160fe8245")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 83.2486 100.33 90)
+			(uuid "034d62b1-e101-45d5-b38f-1a1087a8cc21")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 84.8679 100.33 90)
+			(uuid "cfb6a65f-e4b4-4885-8c52-9a593262eecc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 121.92)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "636784d2-d7f1-437c-9749-0d1d6d3e7ece")
+		(property "Sheetname" "Power"
+			(at 86.36 121.2084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 86.36 130.1246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 72.39 59.69)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b5b9e253-8b7f-4bb9-bef8-83286ffed738")
+		(property "Sheetname" "Audio_DAC"
+			(at 71.6784 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Audio_DAC.kicad_sch"
+			(at 85.6746 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2S_BCK" input
+			(at 72.39 59.69 90)
+			(uuid "e2c5b419-c66a-45c6-9398-a4041c0e35c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_LRCK" input
+			(at 74.0093 59.69 90)
+			(uuid "80f684f5-4d2e-41ca-b5fb-77d580f30ed1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_DOUT" input
+			(at 75.6286 59.69 90)
+			(uuid "7f4924ed-4bdf-4099-8fca-0ae115abbef6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 77.47)
+		(size 12.7 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f6d46258-8d13-4c87-b95e-4a5b8c76ac66")
+		(property "Sheetname" "Audio_ADC"
+			(at 86.9184 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Audio_ADC.kicad_sch"
+			(at 100.9146 88.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2S_BCK" input
+			(at 87.63 77.47 90)
+			(uuid "330c3855-1ce7-48bd-87b0-8ad142a48529")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_LRCK" input
+			(at 89.2493 77.47 90)
+			(uuid "ce0c4c2c-3ee8-4c09-9328-ac7bd5c5b2ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" input
+			(at 90.8686 77.47 90)
+			(uuid "3a3b42f2-99d8-4a6a-8c76-506f3b489d27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 92.4879 77.47 90)
+			(uuid "7a68ebee-b0a7-44e6-978f-36bb63220912")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2S_DIN" output
+			(at 94.1072 77.47 90)
+			(uuid "f988ff70-8bab-4374-b9f3-078810223fe0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CycleSync"
+				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8"
+					(page "5")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

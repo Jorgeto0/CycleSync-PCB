@@ -1,0 +1,129 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d6fe24af-cdf2-45de-9c79-5613f4f48d89")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "I2S_DIN"
+		(shape input)
+		(at 96.52 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20bb41f9-7084-4a14-90be-bdda97e59921")
+	)
+	(hierarchical_label "I2S_LRCK"
+		(shape output)
+		(at 66.04 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f44f3f3-4d91-4d7d-8888-163b2e6c66dc")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape bidirectional)
+		(at 154.94 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f548a2a-0709-4404-ae06-523e17806007")
+	)
+	(hierarchical_label "I2S_DOUT"
+		(shape output)
+		(at 82.55 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d128f57-f206-4b4f-9187-662378d0c7ce")
+	)
+	(hierarchical_label "USB_DP"
+		(shape bidirectional)
+		(at 184.15 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9b050c0e-6f93-4d8e-851f-e60bbe117aee")
+	)
+	(hierarchical_label "PPS_IN"
+		(shape input)
+		(at 143.51 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b92d6982-366e-4464-a494-4c7bd81213d2")
+	)
+	(hierarchical_label "UART_RX"
+		(shape input)
+		(at 130.81 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c74a5dfd-1d5b-419a-86c4-c3df262fff60")
+	)
+	(hierarchical_label "USB_DM"
+		(shape bidirectional)
+		(at 198.12 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9968cdb-5e3a-4053-a8f7-ba87e4348eff")
+	)
+	(hierarchical_label "I2S_BCK"
+		(shape output)
+		(at 49.53 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d67ce968-3ff9-4c1e-bd02-bd44aa573139")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape output)
+		(at 168.91 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e4bd2715-20b8-4eb8-9def-fc78b1fbabe2")
+	)
+	(hierarchical_label "UART_TX"
+		(shape output)
+		(at 114.3 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e7eb101b-2aee-4cff-ab10-77645d983547")
+	)
+)
