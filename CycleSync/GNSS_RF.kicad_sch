@@ -778,6 +778,26 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 76.2) (xy 101.6 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8845fb9a-994c-42ee-b259-cc8e1a8822e9")
+	)
+	(wire
+		(pts
+			(xy 152.4 88.9) (xy 163.83 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e72b36d-de65-4b15-b7c6-5506760f1c63")
+	)
+	(wire
+		(pts
 			(xy 152.4 96.52) (xy 163.83 96.52)
 		)
 		(stroke
@@ -785,6 +805,28 @@
 			(type default)
 		)
 		(uuid "aab13584-85bf-4792-a206-222c4108937f")
+	)
+	(hierarchical_label "GNSS_RESET_N"
+		(shape input)
+		(at 95.25 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "20d55954-086f-4e34-bdff-be2a65b407c8")
+	)
+	(hierarchical_label "GNSS_FIX"
+		(shape output)
+		(at 163.83 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a0aebcb-b4d8-4a80-80d3-4bb94b9592af")
 	)
 	(hierarchical_label "UART_RX"
 		(shape output)
