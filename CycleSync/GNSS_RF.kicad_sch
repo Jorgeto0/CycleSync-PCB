@@ -756,9 +756,39 @@
 			(embedded_fonts no)
 		)
 	)
+	(wire
+		(pts
+			(xy 152.4 99.06) (xy 163.83 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9a3794-85f3-4fde-94fc-717342e8588c")
+	)
+	(wire
+		(pts
+			(xy 152.4 83.82) (xy 163.83 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6839ecc4-e787-458c-ae81-7de396a18768")
+	)
+	(wire
+		(pts
+			(xy 152.4 96.52) (xy 163.83 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab13584-85bf-4792-a206-222c4108937f")
+	)
 	(hierarchical_label "UART_RX"
 		(shape output)
-		(at 50.8 41.91 0)
+		(at 163.83 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -769,7 +799,7 @@
 	)
 	(hierarchical_label "PPS_IN"
 		(shape output)
-		(at 66.04 41.91 0)
+		(at 163.83 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -780,7 +810,7 @@
 	)
 	(hierarchical_label "UART_TX"
 		(shape input)
-		(at 35.56 41.91 0)
+		(at 163.83 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
