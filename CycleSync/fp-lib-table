@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name " CycleSync_local") (type "KiCad") (uri "/Users/jorge/Workspace/FreeLance/Bradly/Custom_Components/ CycleSync_local.pretty") (options "") (descr ""))
+)
