@@ -1,0 +1,78 @@
+ERC report (2026-07-15T17:23:54, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[duplicate_reference]: Duplicate items R6
+
+    ; error
+    @(4700 mils, 2600 mils): Symbol R6 [R]
+    @(3550 mils, 5400 mils): Symbol R6 [R]
+[duplicate_reference]: Duplicate items R5
+
+    ; error
+    @(2100 mils, 4300 mils): Symbol R5 [R]
+    @(4750 mils, 5200 mils): Symbol R5 [R]
+[duplicate_reference]: Duplicate items C14
+
+    ; error
+    @(2100 mils, 5000 mils): Symbol C14 [C]
+    @(2300 mils, 2900 mils): Symbol C14 [C]
+[duplicate_reference]: Duplicate items C15
+
+    ; error
+    @(2200 mils, 5400 mils): Symbol C15 [C]
+    @(8250 mils, 1500 mils): Symbol C15 [C]
+[duplicate_reference]: Duplicate items C10
+
+    ; error
+    @(8350 mils, 2550 mils): Symbol C10 [C]
+    @(1100 mils, 6650 mils): Symbol C10 [C]
+[duplicate_reference]: Duplicate items C11
+
+    ; error
+    @(8850 mils, 2550 mils): Symbol C11 [C]
+    @(1600 mils, 6650 mils): Symbol C11 [C]
+[duplicate_reference]: Duplicate items C12
+
+    ; error
+    @(9400 mils, 2550 mils): Symbol C12 [C]
+    @(2150 mils, 6650 mils): Symbol C12 [C]
+[duplicate_reference]: Duplicate items C13
+
+    ; error
+    @(9950 mils, 2550 mils): Symbol C13 [C]
+    @(1800 mils, 2900 mils): Symbol C13 [C]
+
+***** Sheet /MCU/
+
+***** Sheet /GNSS_RF/
+
+***** Sheet /Audio_DAC/
+
+***** Sheet /Audio_ADC/
+
+***** Sheet /USB_PD/
+[pin_to_pin]: Pins of type Bidirectional and Power output are connected
+    ; warning
+    @(7100 mils, 2500 mils): Symbol U5 Pin 20 [PPHV, Bidirectional, Line]
+    @(1500 mils, 1300 mils): Symbol #FLG02 Pin 1 [Power output, Line]
+[pin_to_pin]: Pins of type Bidirectional and Power output are connected
+    ; warning
+    @(7100 mils, 2500 mils): Symbol U5 Hidden pin 22 [PPHV, Bidirectional, Line]
+    @(1500 mils, 1300 mils): Symbol #FLG02 Pin 1 [Power output, Line]
+[pin_to_pin]: Pins of type Bidirectional and Power output are connected
+    ; warning
+    @(7100 mils, 2500 mils): Symbol U5 Hidden pin 21 [PPHV, Bidirectional, Line]
+    @(1500 mils, 1300 mils): Symbol #FLG02 Pin 1 [Power output, Line]
+
+***** Sheet /Power/
+
+***** Sheet /Daughter_IO/
+
+ ** ERC messages: 11  Errors 8  Warnings 3
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
