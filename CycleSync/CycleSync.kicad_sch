@@ -10,8 +10,44 @@
 	)
 	(lib_symbols)
 	(rectangle
-		(start 212.09 22.86)
-		(end 264.16 59.69)
+		(start 132.08 22.86)
+		(end 186.69 36.83)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "325d1039-4fd6-4309-95dd-859834c7e445")
+	)
+	(rectangle
+		(start 210.82 71.12)
+		(end 256.54 87.63)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b6a11667-51a9-48a0-91b5-197eea1d7c28")
+	)
+	(rectangle
+		(start 138.43 52.07)
+		(end 176.53 86.36)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c5929d71-ca88-426c-ad6a-f55be72c8120")
+	)
+	(rectangle
+		(start 209.55 22.86)
+		(end 266.7 59.69)
 		(stroke
 			(width 0)
 			(type default)
@@ -21,7 +57,7 @@
 		)
 		(uuid "ddb06a3b-2c88-4bf4-b76f-0d407ae4520f")
 	)
-	(text "CYCLESYNC ASSEMBLY VARIANTS\n\n1. PD + LINE-IN:\n   PD_OPTION + LINE_IN_OPTION\n\n2. PD + PLAYBACK-ONLY:\n   PD_OPTION\n\n3. NO-PD + LINE-IN:\n   NO_PD_OPTION + LINE_IN_OPTION\n\n4. NO-PD + PLAYBACK-ONLY:\n   NO_PD_OPTION\n\nCOMPONENTS WITH A BLANK VARIANT FIELD\nARE COMMON TO ALL BUILDS UNLESS MARKED DNP."
+	(text "ASSEMBLY VARIANTS\n\n1. PD + LINE-IN:\n   PD_OPTION + LINE_IN_OPTION\n\n2. PD + PLAYBACK:\n   PD_OPTION ONLY\n\n3. NO-PD + LINE-IN:\n   NO_PD_OPTION + LINE_IN_OPTION\n\n4. NO-PD + PLAYBACK:\n   NO_PD_OPTION ONLY\n\nPD_OPTION AND NO_PD_OPTION ARE MUTUALLY EXCLUSIVE.\nPRIMARY FULL-FEATURE BUILD: PD + LINE-IN."
 		(exclude_from_sim no)
 		(at 238.252 41.148 0)
 		(effects
@@ -30,6 +66,36 @@
 			)
 		)
 		(uuid "5cf73ea9-3e62-4dc1-bf82-6d40f2fdd80a")
+	)
+	(text "CONFORMAL COATING, NO-COAT AREAS\n\nALL CONNECTORS, SWITCHES, TEST POINTS,\nEEPROM RECOVERY PADS AND ANTENNA PADS.\n\nHAND-SOLDER ANT1 AFTER COATING."
+		(exclude_from_sim no)
+		(at 233.68 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5fecee69-5d7f-4678-baf0-17bff481e994")
+	)
+	(text "FIXED CONFIGURATION / ADDRESSES\n\nTPS25751 I²Ct:\nADCIN1 = 0, ADCIN2 = 0\nSAFEMODE, 7-BIT ADDRESS 0x21\n\nPD EEPROM: 7-BIT ADDRESS 0x50\n\nPCM1862:\nMD0 = 0, MS/AD = 0\nI²C CONTROL, 7-BIT ADDRESS 0x4A\n\nLC76G:\nD_SEL DNP → UART INTERFACE"
+		(exclude_from_sim no)
+		(at 157.734 69.596 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "620ec178-e1a3-4ede-9af2-635c2aade961")
+	)
+	(text "VARIANT FIELD IS ASSEMBLY DOCUMENTATION ONLY.\n\nEXPORT A SEPARATE BOM AND POSITION FILE\nFOR EACH ASSEMBLY VARIANT.\nVERIFY EVERY POPULATE/DNP LINE BEFORE RELEASE."
+		(exclude_from_sim no)
+		(at 157.988 29.464 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "908e0687-9bc4-44ca-b90d-6b9d746cab1e")
 	)
 	(wire
 		(pts
@@ -1691,7 +1757,7 @@
 				(justify right)
 			)
 		)
-		(pin "PPHV" bidirectional
+		(pin "VBUS_PD_5V" bidirectional
 			(at 33.02 44.45 0)
 			(uuid "f7f2a20e-27e6-4a7d-b3c5-c3a288494a6d")
 			(effects

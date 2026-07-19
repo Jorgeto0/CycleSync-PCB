@@ -1521,8 +1521,20 @@
 		(uuid "0783990f-bc0e-4043-a502-2e224f891fc8")
 	)
 	(rectangle
-		(start 20.32 134.62)
-		(end 77.47 156.21)
+		(start 207.518 118.11)
+		(end 263.398 143.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "65f8c71d-6bc0-43cf-b8d6-f6f50b4a66c0")
+	)
+	(rectangle
+		(start 19.558 137.668)
+		(end 76.708 159.258)
 		(stroke
 			(width 0)
 			(type default)
@@ -1546,7 +1558,7 @@
 	)
 	(text "ADC CONFIGURATION\n\nMD0 = LOW: I²C CONTROL MODE\nMS/AD = LOW: 7-BIT I²C ADDRESS 0x4A\n\nI²C1 PULL-UP PAIR IS SELECTED BY THE PD VARIANT;\nSEE MCU AND USB_PD SHEETS.\n\nI²S SLAVE; BCK PLL MODE IS USED WHEN SCKI IS ABSENT.\nTARGET AUDIO FORMAT: 48 kHz / 24-BIT."
 		(exclude_from_sim no)
-		(at 49.022 145.542 0)
+		(at 48.26 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1554,7 +1566,7 @@
 		)
 		(uuid "0de05433-ad72-482d-b95b-ba7fb79c67b4")
 	)
-	(text "OPTIONAL LINE-IN / ADC POPULATION GROUP\n\nLINE-IN BUILD:\nPOPULATE U3, R25-R30, C39-C49,\nD4, D8, PLUS J5 AND D5 ON DAUGHTER_IO.\n\nPLAYBACK-ONLY BUILD:\nDNP ALL COMPONENTS LISTED ABOVE.\n\nVARIANT FIELD = LINE_IN_OPTION\nI2C PULL-UP SELECTION IS CONTROLLED SEPARATELY\nBY THE PD / NO-PD OPTION."
+	(text "OPTIONAL LINE-IN / ADC POPULATION GROUP\n\nLINE-IN BUILD:\nPOPULATE U6, R27-R32, C40-C50, D4 AND D5;\nPLUS J5, D11, R56 AND R57 ON DAUGHTER_IO.\n\nPLAYBACK-ONLY BUILD:\nDNP ALL COMPONENTS LISTED ABOVE.\n\nVARIANT FIELD = LINE_IN_OPTION.\nI²C PULL-UP SELECTION IS CONTROLLED BY\nTHE PD / NO-PD VARIANT."
 		(exclude_from_sim no)
 		(at 54.102 35.814 0)
 		(effects
@@ -1574,9 +1586,19 @@
 		)
 		(uuid "2a0379dc-2a37-48c3-84b3-7ea3753cdd9c")
 	)
+	(text "LINE-IN FRONT END - EACH CHANNEL\n\nDAUGHTER R56/R57 = 10 kΩ\nMAIN R27/R30 = 1.30 kΩ SERIES\nR28/R31 = 1.58 kΩ SHUNT\nR29/R32 = 100 Ω ADC SERIES\nC47/C49 = 10 µF; C48/C50 = 1.5 nF\n\nASSUMING 100 Ω SOURCE AND 20 kΩ ADC INPUT:\nGAIN ≈ -18.9 dB AT 1 kHz.\n+26 dBu INPUT → ≈ 1.75 Vrms AT ADC.\nWORST CASE ≈ 2.05 Vrms < 2.1 Vrms FULL SCALE."
+		(exclude_from_sim no)
+		(at 236.22 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "44e37c06-ed26-48c6-8d73-2decd5077298")
+	)
 	(text "PCM1862 STEREO AUDIO ADC"
 		(exclude_from_sim no)
-		(at 149.098 134.874 0)
+		(at 147.32 132.588 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2611,7 +2633,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05bd2354-a1f4-4dbd-8b25-2d19a23c65d6")
-		(property "Reference" "C48"
+		(property "Reference" "C45"
 			(at 212.09 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2686,7 +2708,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C48")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -2704,7 +2726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08463d44-cd22-4049-9de2-4cdcf63c9b44")
-		(property "Reference" "C39"
+		(property "Reference" "C47"
 			(at 99.06 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2777,7 +2799,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C39")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -2795,7 +2817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15048fd9-03cc-4d6d-8acf-6a67a4f113e3")
-		(property "Reference" "R28"
+		(property "Reference" "R30"
 			(at 74.93 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2805,7 +2827,7 @@
 				)
 			)
 		)
-		(property "Value" "60k4"
+		(property "Value" "1k30"
 			(at 74.93 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2868,7 +2890,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -2886,7 +2908,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18fd5ae4-7193-46f1-b802-c868386c8f19")
-		(property "Reference" "C43"
+		(property "Reference" "C40"
 			(at 134.62 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2961,7 +2983,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C43")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -2979,7 +3001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f9c515c-5a85-4e18-bdde-efe4bb9c3c6e")
-		(property "Reference" "R29"
+		(property "Reference" "R31"
 			(at 83.82 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2990,7 +3012,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "19k6"
+		(property "Value" "1k58"
 			(at 83.82 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3054,7 +3076,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R29")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -3072,7 +3094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26b830a1-a52e-455c-a007-171399f951d3")
-		(property "Reference" "R27"
+		(property "Reference" "R29"
 			(at 120.65 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3082,7 +3104,7 @@
 				)
 			)
 		)
-		(property "Value" "47R"
+		(property "Value" "100R"
 			(at 120.65 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3145,7 +3167,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R27")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -3163,7 +3185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2766c1ac-68ed-4bb0-91b8-77abe81c25f2")
-		(property "Reference" "D8"
+		(property "Reference" "D5"
 			(at 64.77 113.0299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3238,7 +3260,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "D8")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3412,7 +3434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31658f28-df65-4aaa-8712-8ddc9299d83e")
-		(property "Reference" "C46"
+		(property "Reference" "C43"
 			(at 193.04 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3487,7 +3509,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C46")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -3504,8 +3526,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e8b5d5d-fe61-40fc-90d5-9e7d7c732b3d")
-		(property "Reference" "U3"
-			(at 172.3233 133.35 0)
+		(property "Reference" "U6"
+			(at 176.784 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3516,7 +3538,7 @@
 			)
 		)
 		(property "Value" "PCM1862DBT"
-			(at 172.3233 135.89 0)
+			(at 172.212 132.588 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3665,7 +3687,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "U3")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -3761,7 +3783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47fc05b7-3a75-4b94-9883-49eec2309ea0")
-		(property "Reference" "C47"
+		(property "Reference" "C44"
 			(at 209.55 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3836,7 +3858,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C47")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -3854,7 +3876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52dd9e02-1e44-473e-b383-5fef42178262")
-		(property "Reference" "C42"
+		(property "Reference" "C50"
 			(at 135.89 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3865,7 +3887,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220p"
+		(property "Value" "1n5"
 			(at 135.89 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3929,7 +3951,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C42")
+					(reference "C50")
 					(unit 1)
 				)
 			)
@@ -4179,7 +4201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "717cb5d8-7c45-43c0-a5d2-d24f169be6ae")
-		(property "Reference" "C44"
+		(property "Reference" "C41"
 			(at 147.32 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4254,7 +4276,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C44")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -4272,7 +4294,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8212c008-3f42-4a51-8e86-72d16a22f917")
-		(property "Reference" "C41"
+		(property "Reference" "C49"
 			(at 101.6 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4345,7 +4367,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C41")
+					(reference "C49")
 					(unit 1)
 				)
 			)
@@ -4456,7 +4478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e9c83cb-5af9-46f3-be6e-7edb0ca6cf98")
-		(property "Reference" "R26"
+		(property "Reference" "R28"
 			(at 83.82 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4467,7 +4489,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "19k6"
+		(property "Value" "1k58"
 			(at 83.82 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4531,7 +4553,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -4782,7 +4804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ada0e4bd-bae2-47c0-9f99-8fb4e6b4fd7c")
-		(property "Reference" "R25"
+		(property "Reference" "R27"
 			(at 74.93 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4792,7 +4814,7 @@
 				)
 			)
 		)
-		(property "Value" "60k4"
+		(property "Value" "1k30"
 			(at 74.93 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4855,7 +4877,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R25")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -4950,7 +4972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae6a31ec-5f70-444b-b363-3f2a8f9ddae9")
-		(property "Reference" "R30"
+		(property "Reference" "R32"
 			(at 121.92 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4960,7 +4982,7 @@
 				)
 			)
 		)
-		(property "Value" "47R"
+		(property "Value" "100R"
 			(at 121.92 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5023,7 +5045,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "R30")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -5197,7 +5219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbe7ec6f-9981-4bee-9c76-430edd2bdbb3")
-		(property "Reference" "C40"
+		(property "Reference" "C48"
 			(at 135.89 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5208,7 +5230,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "220p"
+		(property "Value" "1n5"
 			(at 135.89 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5272,7 +5294,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C40")
+					(reference "C48")
 					(unit 1)
 				)
 			)
@@ -5290,7 +5312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e42a3ce9-e295-4399-9310-045956011eeb")
-		(property "Reference" "C49"
+		(property "Reference" "C46"
 			(at 223.52 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5365,7 +5387,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C49")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -5538,7 +5560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb54e146-9c7c-4bd8-a2bd-3bc8d124e75d")
-		(property "Reference" "C45"
+		(property "Reference" "C42"
 			(at 182.88 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5613,7 +5635,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/f6d46258-8d13-4c87-b95e-4a5b8c76ac66"
-					(reference "C45")
+					(reference "C42")
 					(unit 1)
 				)
 			)

@@ -2178,7 +2178,7 @@
 		)
 		(uuid "db10f4d7-93a4-45b4-9b4f-daf752f0702c")
 	)
-	(text "USB-PD / NO-PD POPULATION OPTIONS\n\nPD BUILD:\nPOPULATE ALL PD_OPTION COMPONENTS.\nDNP ALL NO_PD_OPTION COMPONENTS.\n\nNO-PD BUILD:\nDNP ALL PD_OPTION COMPONENTS.\nPOPULATE ALL NO_PD_OPTION COMPONENTS.\n\nC57 AND C58 ARE COMMON:\nPOPULATE IN BOTH BUILDS.\n\nUSB D+/D− BYPASS U5 AND CONNECT DIRECTLY\nBETWEEN THE HOST USB-C PORT AND MCU."
+	(text "USB-PD / NO-PD POPULATION OPTIONS\n\nPD BUILD:\nPOPULATE ALL PD_OPTION COMPONENTS.\nDNP ALL NO_PD_OPTION COMPONENTS.\n\nNO-PD BUILD:\nDNP ALL PD_OPTION COMPONENTS.\nPOPULATE ALL NO_PD_OPTION COMPONENTS.\n\nC58 AND C59 ARE COMMON:\nPOPULATE IN BOTH BUILDS.\n\nUSB D+/D− BYPASS U5 AND CONNECT DIRECTLY\nBETWEEN THE HOST USB-C PORT AND MCU."
 		(exclude_from_sim no)
 		(at 188.976 149.352 0)
 		(effects
@@ -2200,7 +2200,7 @@
 	)
 	(text "SAFEMODE, I²C ADDRESS 0x21"
 		(exclude_from_sim no)
-		(at 122.682 46.228 0)
+		(at 121.666 42.418 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2210,7 +2210,7 @@
 	)
 	(text "ADCIN1 = 0, ADCIN2 = 0"
 		(exclude_from_sim no)
-		(at 125.222 43.942 0)
+		(at 121.666 40.386 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -2238,7 +2238,7 @@
 		)
 		(uuid "6e84f7f9-96cb-4cfd-ab8e-3e1b7ee5d442")
 	)
-	(text "PD-OPTION I²C1 PULL-UPS\n\nR37/R38 = 2.2 kΩ TO U5 LDO_3V3\nPOPULATE ONLY IN PD BUILDS.\n\nNO-PD BUILDS USE R53/R54 ON MCU SHEET.\nNEVER POPULATE BOTH PULL-UP PAIRS."
+	(text "PD-OPTION I²C1 PULL-UPS\n\nR39/R40 = 2.2 kΩ TO U8 LDO_3V3.\nPOPULATE ONLY IN PD BUILDS.\n\nNO-PD BUILDS USE R7/R8 ON MCU SHEET.\nNEVER POPULATE BOTH PULL-UP PAIRS."
 		(exclude_from_sim no)
 		(at 116.84 118.11 0)
 		(effects
@@ -2349,12 +2349,6 @@
 		(uuid "4f8ed688-aee4-4920-9cdb-ae9e80abcbda")
 	)
 	(junction
-		(at 204.47 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "52cc687a-12a2-4b91-ae90-4c243cbe04ae")
-	)
-	(junction
 		(at 207.01 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2439,6 +2433,12 @@
 		(uuid "77000cfa-5ae1-4e37-bba4-7cb8815f8e2b")
 	)
 	(junction
+		(at 204.47 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78ead993-f7ad-4bd1-834d-1430622a4930")
+	)
+	(junction
 		(at 262.89 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2487,6 +2487,12 @@
 		(uuid "affd7e98-e1e9-4c0b-852b-03907e48fb6b")
 	)
 	(junction
+		(at 227.33 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba64406c-8bd9-4bd7-ab5d-e9544c4f0899")
+	)
+	(junction
 		(at 238.76 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2533,12 +2539,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee45a358-37b5-4de1-b6a6-fdd65068e0be")
-	)
-	(junction
-		(at 227.33 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fdf9ce8a-634a-4222-9be2-927d90d0eadf")
 	)
 	(wire
 		(pts
@@ -2832,7 +2832,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 161.29) (xy 130.81 166.37)
+			(xy 129.54 156.21) (xy 129.54 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3172,6 +3172,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 55.88) (xy 227.33 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56309de6-1244-4221-9b21-01a29b771050")
+	)
+	(wire
+		(pts
 			(xy 207.01 95.25) (xy 207.01 92.71)
 		)
 		(stroke
@@ -3422,7 +3432,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 161.29) (xy 130.81 161.29)
+			(xy 125.73 156.21) (xy 129.54 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3852,7 +3862,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 161.29) (xy 119.38 161.29)
+			(xy 110.49 156.21) (xy 118.11 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4212,16 +4222,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 55.88) (xy 227.33 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f93c17c7-a1e4-4663-8ec8-d7cf9bc809db")
-	)
-	(wire
-		(pts
 			(xy 124.46 96.52) (xy 124.46 76.2)
 		)
 		(stroke
@@ -4382,7 +4382,7 @@
 	)
 	(hierarchical_label "PDIN_CC2"
 		(shape bidirectional)
-		(at 111.76 161.29 180)
+		(at 110.49 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4435,7 +4435,7 @@
 		)
 		(uuid "a523ddaa-c050-46da-a7d1-60ad9a323987")
 	)
-	(hierarchical_label "PPHV"
+	(hierarchical_label "VBUS_PD_5V"
 		(shape bidirectional)
 		(at 242.57 24.13 0)
 		(effects
@@ -4580,7 +4580,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0866692f-90a5-4e8a-8487-a3400b7ee1ab")
-		(property "Reference" "C64"
+		(property "Reference" "C65"
 			(at 210.82 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4655,7 +4655,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C64")
+					(reference "C65")
 					(unit 1)
 				)
 			)
@@ -4673,7 +4673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "097c40fd-f709-4237-94a1-3e436c2da350")
-		(property "Reference" "R34"
+		(property "Reference" "R36"
 			(at 109.22 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4748,7 +4748,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R34")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -4844,7 +4844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c016b0b-0df6-4e84-ba36-542d81f09b33")
-		(property "Reference" "C52"
+		(property "Reference" "C53"
 			(at 33.02 161.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4919,7 +4919,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C52")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -5015,7 +5015,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1042bf73-3763-4bfd-a1b4-0d891d7896cf")
-		(property "Reference" "C58"
+		(property "Reference" "C59"
 			(at 242.57 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5079,7 +5079,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C58")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -5097,7 +5097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12779b1a-ab46-4159-b731-66e2fdd205f2")
-		(property "Reference" "C56"
+		(property "Reference" "C57"
 			(at 234.95 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5172,7 +5172,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C56")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -5266,10 +5266,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "213353e3-353c-4484-b14c-99235ecfbad8")
-		(property "Reference" "U5"
-			(at 172.3233 113.03 0)
+		(property "Reference" "U8"
+			(at 175.514 40.132 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5280,7 +5279,7 @@
 			)
 		)
 		(property "Value" "TPS25751D"
-			(at 172.3233 115.57 0)
+			(at 171.704 112.268 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5457,7 +5456,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "U5")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -5475,7 +5474,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cd3fa30-a907-4d6e-b730-d96a65a97253")
-		(property "Reference" "C51"
+		(property "Reference" "C52"
 			(at 21.59 161.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5550,7 +5549,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C51")
+					(reference "C52")
 					(unit 1)
 				)
 			)
@@ -5567,7 +5566,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "32f202a3-fa67-49fc-8ac1-1ea7037cd8ef")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 51.308 76.962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5660,7 +5659,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -5756,7 +5755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37d66040-4d87-4b1f-b5c1-917810c881ed")
-		(property "Reference" "C61"
+		(property "Reference" "C62"
 			(at 223.52 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5831,7 +5830,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C61")
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -6005,7 +6004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bb888dc-0655-43a3-a22c-9cd92d501b91")
-		(property "Reference" "R33"
+		(property "Reference" "R35"
 			(at 100.33 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6080,7 +6079,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R33")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -6098,7 +6097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "421ee5e3-24cf-4ecf-89df-8561b9ad3b8b")
-		(property "Reference" "C54"
+		(property "Reference" "C55"
 			(at 209.55 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6173,7 +6172,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C54")
+					(reference "C55")
 					(unit 1)
 				)
 			)
@@ -6191,7 +6190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43770674-34fc-40a2-902d-c52312582f3b")
-		(property "Reference" "C50"
+		(property "Reference" "C51"
 			(at 57.15 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6266,7 +6265,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C50")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -6362,7 +6361,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4eade321-45d7-4603-acce-a343c3f24fbc")
-		(property "Reference" "R40"
+		(property "Reference" "R33"
 			(at 143.51 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6435,7 +6434,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R40")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -6452,7 +6451,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "53a56550-c326-4e4a-83b6-f53e83bf7d61")
-		(property "Reference" "U7"
+		(property "Reference" "U9"
 			(at 266.7 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6542,7 +6541,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "U7")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -6560,7 +6559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56ee2293-713f-4154-91c0-1c9956e845bb")
-		(property "Reference" "C65"
+		(property "Reference" "C66"
 			(at 223.52 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +6634,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C65")
+					(reference "C66")
 					(unit 1)
 				)
 			)
@@ -6653,7 +6652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57944085-a586-4b02-9cf4-1777056dc8b3")
-		(property "Reference" "R37"
+		(property "Reference" "R39"
 			(at 135.89 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6728,7 +6727,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R37")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -6746,7 +6745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a21a682-7865-4c9e-b2e3-9f5c65c39587")
-		(property "Reference" "R42"
+		(property "Reference" "R44"
 			(at 219.71 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6821,7 +6820,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R42")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -6917,7 +6916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60b381d2-cd94-40c9-9954-89f2335579f7")
-		(property "Reference" "C66"
+		(property "Reference" "C67"
 			(at 237.49 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6992,7 +6991,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C66")
+					(reference "C67")
 					(unit 1)
 				)
 			)
@@ -7010,7 +7009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67cb9ec4-3269-48fc-97e6-9979fbb7ede0")
-		(property "Reference" "C62"
+		(property "Reference" "C63"
 			(at 234.95 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7085,7 +7084,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C62")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -7103,7 +7102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79812b66-041f-466c-ae88-538edcb2e611")
-		(property "Reference" "R41"
+		(property "Reference" "R43"
 			(at 207.01 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7178,7 +7177,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R41")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -7509,7 +7508,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e4c7fbf-53bd-44e4-9a75-f4a27e69e5b2")
-		(property "Reference" "C55"
+		(property "Reference" "C56"
 			(at 222.25 30.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7584,7 +7583,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C55")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -7592,7 +7591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 166.37 0)
+		(at 129.54 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7603,7 +7602,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fe8a2aa-62d0-46a5-a81a-599935afcbd8")
 		(property "Reference" "#PWR0132"
-			(at 130.81 172.72 0)
+			(at 129.54 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7614,7 +7613,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 171.45 0)
+			(at 129.54 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7624,7 +7623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 166.37 0)
+			(at 129.54 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7635,7 +7634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 166.37 0)
+			(at 129.54 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7646,7 +7645,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 166.37 0)
+			(at 129.54 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7680,7 +7679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90549495-bc1d-4932-a34a-a31ba4cceafc")
-		(property "Reference" "C60"
+		(property "Reference" "C61"
 			(at 210.82 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7755,7 +7754,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C60")
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -7773,7 +7772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "948b25da-dde3-4d54-a95b-a704a4d65e04")
-		(property "Reference" "C63"
+		(property "Reference" "C64"
 			(at 246.38 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7848,7 +7847,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C63")
+					(reference "C64")
 					(unit 1)
 				)
 			)
@@ -8022,7 +8021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b17e71ac-51e4-4e19-8935-0375cdb86265")
-		(property "Reference" "R31"
+		(property "Reference" "R41"
 			(at 88.9 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8095,7 +8094,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R31")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -8190,7 +8189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4eefb2e-1e94-46d5-bb50-7a4eacb36bb8")
-		(property "Reference" "R35"
+		(property "Reference" "R37"
 			(at 118.11 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8265,7 +8264,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R35")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -8283,7 +8282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6248917-dd4a-4e73-8bbc-3a5ef2f88b6e")
-		(property "Reference" "R38"
+		(property "Reference" "R40"
 			(at 146.05 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8358,7 +8357,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R38")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -8376,7 +8375,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf1fcbf0-fb51-44af-9666-d814652e17e0")
-		(property "Reference" "C53"
+		(property "Reference" "C54"
 			(at 45.72 161.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8451,7 +8450,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C53")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -8859,7 +8858,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf26da17-a87c-4be1-b74a-700772dfdca5")
-		(property "Reference" "R36"
+		(property "Reference" "R38"
 			(at 127 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8934,7 +8933,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R36")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -8942,7 +8941,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 123.19 161.29 270)
+		(at 121.92 156.21 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8952,8 +8951,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2930920-8c9f-4a97-8882-d922bad00f7f")
-		(property "Reference" "R32"
-			(at 123.19 154.94 90)
+		(property "Reference" "R42"
+			(at 121.92 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8963,7 +8962,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 123.19 157.48 90)
+			(at 121.92 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8973,7 +8972,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 159.512 90)
+			(at 121.92 154.432 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8984,7 +8983,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 161.29 0)
+			(at 121.92 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8995,7 +8994,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 123.19 161.29 0)
+			(at 121.92 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9006,7 +9005,7 @@
 			)
 		)
 		(property "Variant" "PD_OPTION"
-			(at 123.19 161.29 90)
+			(at 121.92 156.21 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9025,7 +9024,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R32")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -9199,7 +9198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfda032f-8435-4954-bcfe-1d1928f4201b")
-		(property "Reference" "C59"
+		(property "Reference" "C60"
 			(at 198.12 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9274,7 +9273,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C59")
+					(reference "C60")
 					(unit 1)
 				)
 			)
@@ -9292,7 +9291,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e06de1b6-95d9-4213-9a6c-55d642698ba2")
-		(property "Reference" "R39"
+		(property "Reference" "R34"
 			(at 142.24 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9365,7 +9364,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "R39")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -9619,7 +9618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f62dddda-bf69-4735-98ce-c0667582f798")
-		(property "Reference" "C67"
+		(property "Reference" "C68"
 			(at 250.19 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9694,7 +9693,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C67")
+					(reference "C68")
 					(unit 1)
 				)
 			)
@@ -9712,7 +9711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb7e3583-c1d0-4da2-a1c7-798d4b1b8306")
-		(property "Reference" "C57"
+		(property "Reference" "C58"
 			(at 231.14 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9776,7 +9775,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "C57")
+					(reference "C58")
 					(unit 1)
 				)
 			)

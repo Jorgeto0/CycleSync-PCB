@@ -298,6 +298,18 @@
         ""
       ],
       [
+        "pin_to_pin|1803400|635000|6ed2bd0f-8dbc-4922-ab2f-59939e452ead|b70c6b3a-c52f-43bb-836a-6b2f06c94f4f|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/636784d2-d7f1-437c-9749-0d1d6d3e7ece",
+        "INTENTIONAL: PWR_FLAG MARKS THE EXTERNALLY POWERED VBUS_PD_5V RAIL CONNECTED TO THE TPS25751D BIDIRECTIONAL PPHV POWER PATH."
+      ],
+      [
+        "pin_to_pin|1803400|635000|e7d78960-7ced-48cd-8ccf-1cddd2c51ac6|b70c6b3a-c52f-43bb-836a-6b2f06c94f4f|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/636784d2-d7f1-437c-9749-0d1d6d3e7ece",
+        ""
+      ],
+      [
+        "pin_to_pin|1803400|635000|f2dee75e-d586-457e-b555-310fd55c4d61|b70c6b3a-c52f-43bb-836a-6b2f06c94f4f|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/636784d2-d7f1-437c-9749-0d1d6d3e7ece",
+        ""
+      ],
+      [
         "pin_to_pin|774700|1676400|563ef0ab-3df3-44ab-bd02-ca6ef61fe69e|4dd9a831-e8b8-4cfd-a306-68027558e353|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd|/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd",
         "Intentional TPS22919 QOD-to-VOUT connection per datasheet."
       ],
@@ -705,7 +717,7 @@
         "uuid": "3f2cc6af-e67b-48ad-b391-ff7619611bd8"
       }
     ],
-    "used_designators": "AE1,L1-3,FL1,Q1-2,#FLG1-5,BT1-2,R1-55,J1-8,D1-10,#PWR1-136,Y1,TP1-15,U1-18,C1-96,SW1-2",
+    "used_designators": "AE1,L1-3,FL1,Q1-2,#FLG1-5,BT1-2,R1-57,J1-8,D1-11,#PWR1-138,Y1,TP1-15,U1-19,C1-96,SW1-2",
     "variants": []
   },
   "sheets": [

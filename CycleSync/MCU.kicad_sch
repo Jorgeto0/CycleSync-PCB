@@ -2688,7 +2688,7 @@
 		)
 		(uuid "118ef6b0-38e0-4231-bad7-e4eb0ab2ab9f")
 	)
-	(text "NO-PD-OPTION I²C1 PULL-UPS\n\nR53/R54 = 2.2 kΩ TO +3V3_DIG\nPOPULATE ONLY IN NO-PD BUILDS.\n\nPD BUILDS USE R37/R38 ON USB_PD SHEET.\nNEVER POPULATE BOTH PULL-UP PAIRS."
+	(text "NO-PD-OPTION I²C1 PULL-UPS\n\nR7/R8 = 2.2 kΩ TO +3V3_DIG\nPOPULATE ONLY IN NO-PD BUILDS.\n\nPD BUILDS USE R39/R40 ON USB_PD SHEET.\nNEVER POPULATE BOTH PULL-UP PAIRS."
 		(exclude_from_sim no)
 		(at 264.16 157.48 0)
 		(effects
@@ -5191,7 +5191,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23b5d452-74b5-403e-9122-cf7ce7abc686")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 53.594 104.648 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5253,7 +5253,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/3d349b1e-1bc7-4ddf-90e2-c9fab86974ff"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5743,7 +5743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4dd67c20-bdfe-4c0b-89e7-f19480716808")
-		(property "Reference" "R54"
+		(property "Reference" "R8"
 			(at 216.154 92.456 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5816,7 +5816,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/3d349b1e-1bc7-4ddf-90e2-c9fab86974ff"
-					(reference "R54")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -6667,7 +6667,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "763a2fb3-2801-4556-bbc7-a5d0ce3c3ad6")
-		(property "Reference" "R5"
+		(property "Reference" "R4"
 			(at 87.884 97.028 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6729,7 +6729,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/3d349b1e-1bc7-4ddf-90e2-c9fab86974ff"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -7632,7 +7632,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "abffc781-e40d-4f26-bade-4f87abd509c3")
-		(property "Reference" "R53"
+		(property "Reference" "R7"
 			(at 200.914 93.218 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7705,7 +7705,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/3d349b1e-1bc7-4ddf-90e2-c9fab86974ff"
-					(reference "R53")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7804,7 +7804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b2242d62-79c3-498d-9b93-c932fcd69541")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 87.63 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7866,7 +7866,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/3d349b1e-1bc7-4ddf-90e2-c9fab86974ff"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)

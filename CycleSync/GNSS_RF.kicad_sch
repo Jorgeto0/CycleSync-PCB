@@ -3469,7 +3469,7 @@
 		)
 		(uuid "4564c28d-65ed-4491-9465-0e40b7c2a5b3")
 	)
-	(text "GNSS RESET: R14 = 0 Ω, POPULATE\nD_SEL STRAP: R13 = DNP FOR UART DEFAULT"
+	(text "GNSS RESET: R9 = 0 Ω, POPULATE\nD_SEL STRAP: R10 = DNP FOR UART DEFAULT"
 		(exclude_from_sim no)
 		(at 71.882 29.21 0)
 		(effects
@@ -3489,7 +3489,7 @@
 		)
 		(uuid "7ed18915-5088-4666-b526-572c18d7f1a3")
 	)
-	(text "BACKUP-DOMAIN NOTES\n\nBT1 MUST BE A RECHARGEABLE VL-2330/HFN CELL.\nDO NOT SUBSTITUTE A PRIMARY COIN CELL.\n\nR15 = 1 kΩ LIMITS THE CELL CHARGE CURRENT.\nV_BCKP MUST RISE BEFORE OR WITH U2 VCC.\n\nU13 QOD IS INTENTIONALLY CONNECTED TO OUT.\n\nU18 BLOCKS BT1 BACKFEED INTO +3V3_GNSS WHEN GNSS POWER IS OFF."
+	(text "BACKUP-DOMAIN NOTES\n\nBT1 MUST BE A RECHARGEABLE VL-2330/HFN CELL.\nDO NOT SUBSTITUTE A PRIMARY COIN CELL.\n\nR21 = 1 kΩ LIMITS CELL CHARGE CURRENT.\nU3 BLOCKS BT1 BACKFEED INTO +3V3_GNSS.\nU4 QOD IS INTENTIONALLY CONNECTED TO OUT.\nV_BCKP MUST RISE BEFORE OR WITH U2 VCC.\n\nGPIO12 HIGH = BACKUP OFF.\nGPIO12 LOW OR HI-Z = BACKUP ON."
 		(exclude_from_sim no)
 		(at 149.606 141.986 0)
 		(effects
@@ -3499,7 +3499,7 @@
 		)
 		(uuid "94f32446-7d70-4e4e-b9ba-0ddc128122c0")
 	)
-	(text "RF POPULATION OPTIONS\n\nDEFAULT:\nFIT R7-R10 = 0 Ω.\nDNP C16, C17, R11, R12, L1, L2, J2, FL1.\n\nVNA TEST:\nDNP R8; FIT J2.\n\nSAW FILTER:\nDNP R9 AND R10; FIT FL1 AND R11/R12 = 0 Ω.\nKEEP L1/L2 DNP."
+	(text "RF POPULATION OPTIONS\n\nDEFAULT:\nFIT R11-R14 = 0 Ω.\nDNP C16, C17, R15, R16, L1, L2, J2, FL1.\n\nVNA TEST:\nDNP R12; FIT J2.\n\nSAW FILTER:\nDNP R13 AND R14.\nFIT FL1 AND FIT R15/R16 = 0 Ω.\nKEEP L1/L2 DNP."
 		(exclude_from_sim no)
 		(at 31.75 101.6 0)
 		(effects
@@ -3538,12 +3538,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e687192-698c-4ec7-b47a-e50b07919aa3")
-	)
-	(junction
-		(at 88.9 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "396f9f6c-efb9-42f4-b4e8-bbcd0fef5fdf")
 	)
 	(junction
 		(at 101.6 154.94)
@@ -3682,6 +3676,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d6d45aa-a81a-4182-be56-0a1fca6c1672")
+	)
+	(junction
+		(at 88.9 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9fbae019-7a4a-442a-8885-0b210ca81143")
 	)
 	(junction
 		(at 101.6 147.32)
@@ -3833,7 +3833,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 129.54) (xy 88.9 133.35)
+			(xy 88.9 129.54) (xy 88.9 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4043,6 +4043,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 139.7) (xy 72.39 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32934aee-b178-4afc-830f-85fbf0bf6436")
+	)
+	(wire
+		(pts
 			(xy 193.04 50.8) (xy 203.2 50.8)
 		)
 		(stroke
@@ -4173,6 +4183,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 139.7) (xy 88.9 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a8eb90-a6da-4ce4-9837-9a1cb4243e8c")
+	)
+	(wire
+		(pts
 			(xy 59.69 129.54) (xy 59.69 134.62)
 		)
 		(stroke
@@ -4230,16 +4250,6 @@
 			(type default)
 		)
 		(uuid "55590a35-9efd-4f57-b1b9-6033c9eac0de")
-	)
-	(wire
-		(pts
-			(xy 72.39 139.7) (xy 72.39 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5619322f-2a99-4a51-a0ca-260f210e7f8e")
 	)
 	(wire
 		(pts
@@ -4370,6 +4380,16 @@
 			(type default)
 		)
 		(uuid "7235a3db-0827-4980-91bd-94fec9fdbbe3")
+	)
+	(wire
+		(pts
+			(xy 72.39 140.97) (xy 88.9 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "730c9dfe-da65-475f-a40c-f813e404e065")
 	)
 	(wire
 		(pts
@@ -5093,16 +5113,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 140.97) (xy 72.39 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e996aa2f-fe84-4f4e-b73a-70cdea166966")
-	)
-	(wire
-		(pts
 			(xy 91.44 41.91) (xy 97.79 41.91)
 		)
 		(stroke
@@ -5530,7 +5540,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 88.9 137.16 0)
+		(at 88.9 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5540,8 +5550,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "085549b8-72f7-4700-a14d-e218433862d0")
-		(property "Reference" "C24"
-			(at 92.71 135.8899 0)
+		(property "Reference" "C22"
+			(at 92.71 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5552,7 +5562,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 92.71 138.4299 0)
+			(at 92.71 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5563,7 +5573,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 89.8652 140.97 0)
+			(at 89.8652 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5574,7 +5584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 137.16 0)
+			(at 88.9 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5585,7 +5595,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 88.9 137.16 0)
+			(at 88.9 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5604,7 +5614,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "C24")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -5621,7 +5631,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0bbd4751-b890-4221-96a6-1a804b2d4845")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 215.9 88.646 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5683,7 +5693,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -5779,7 +5789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f91d19f-2e91-47e4-8d8a-dfb6ff7409df")
-		(property "Reference" "C83"
+		(property "Reference" "C21"
 			(at 52.07 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5843,7 +5853,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "C83")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6500,7 +6510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ba2f48d-75a6-419e-8d07-f7da04951b38")
-		(property "Reference" "R16"
+		(property "Reference" "R22"
 			(at 127 162.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6564,7 +6574,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R16")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -6660,7 +6670,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5589148a-5498-4aca-95d2-23f86c3746f0")
-		(property "Reference" "R13"
+		(property "Reference" "R10"
 			(at 101.6 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6722,7 +6732,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R13")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6900,7 +6910,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "68ff36d3-f93c-4cf4-acd9-7581bbaf4ad6")
-		(property "Reference" "R19"
+		(property "Reference" "R17"
 			(at 208.28 64.516 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6962,7 +6972,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R19")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -7059,7 +7069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6da2d8c2-a8c3-49de-b6a7-8edc9a00014d")
-		(property "Reference" "R8"
+		(property "Reference" "R12"
 			(at 77.47 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7121,7 +7131,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R8")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7299,7 +7309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767e4701-43d0-4b69-9803-2867dfc99464")
-		(property "Reference" "R9"
+		(property "Reference" "R13"
 			(at 99.06 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7361,7 +7371,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R9")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7457,7 +7467,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7be1a52c-e81a-4882-a650-6b3a8c9024ad")
-		(property "Reference" "R21"
+		(property "Reference" "R19"
 			(at 241.554 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7519,7 +7529,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R21")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -8193,7 +8203,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "96abc2ed-4a06-4aa8-b3f9-d7c17679b693")
-		(property "Reference" "R12"
+		(property "Reference" "R16"
 			(at 127 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8257,7 +8267,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R12")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -8354,7 +8364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0ab85a4-332f-406a-bbcb-b9c679bcb429")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 130.81 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8418,7 +8428,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R18")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8436,7 +8446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4f90a53-1a46-4259-93d9-292f6a5ffda8")
-		(property "Reference" "R17"
+		(property "Reference" "R23"
 			(at 138.43 171.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8498,7 +8508,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R17")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -8673,7 +8683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aca7fd2f-8242-4ec3-b8f6-bf740f105bed")
-		(property "Reference" "C23"
+		(property "Reference" "C25"
 			(at 58.42 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8737,7 +8747,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "C23")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -8755,7 +8765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afead080-e1dd-4694-a399-d3c4cd4931cd")
-		(property "Reference" "R10"
+		(property "Reference" "R14"
 			(at 119.38 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8817,7 +8827,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R10")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -8834,7 +8844,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b46375ad-daf2-44f4-8bb6-6a60d752da6f")
-		(property "Reference" "R20"
+		(property "Reference" "R18"
 			(at 209.55 73.406 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8896,7 +8906,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R20")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -9303,7 +9313,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c16e2c51-a146-40d4-822e-9a04133e85e4")
-		(property "Reference" "U18"
+		(property "Reference" "U3"
 			(at 72.39 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9374,7 +9384,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "U18")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -9470,7 +9480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9042c5d-a755-44de-a1a3-5fc1f8481c19")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 31.75 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9534,7 +9544,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -9630,7 +9640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd77d3cb-c459-49d3-992d-15b9ec4d7875")
-		(property "Reference" "R14"
+		(property "Reference" "R9"
 			(at 101.6 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9692,7 +9702,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R14")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9788,7 +9798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d24fea5e-da38-4720-a06d-e2268af1d60e")
-		(property "Reference" "R15"
+		(property "Reference" "R21"
 			(at 123.19 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9852,7 +9862,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R15")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -9870,7 +9880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbbf6da9-92a6-4a0c-ba0a-2f78526760c5")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 44.45 167.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9934,7 +9944,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "C22")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -10145,7 +10155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1a04e0b-760b-4762-9f43-dedfa214e119")
-		(property "Reference" "R7"
+		(property "Reference" "R11"
 			(at 50.8 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10207,7 +10217,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R7")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -10303,7 +10313,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e8f2deb5-53ce-42d1-a041-a1070eccc647")
-		(property "Reference" "U13"
+		(property "Reference" "U4"
 			(at 91.44 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10377,7 +10387,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "U13")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -10874,7 +10884,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ffc69f46-eb1d-4fea-ad65-93827e53764a")
-		(property "Reference" "R11"
+		(property "Reference" "R15"
 			(at 96.52 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10938,7 +10948,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5e4ef105-e22c-420b-b4f0-f48259b850dd"
-					(reference "R11")
+					(reference "R15")
 					(unit 1)
 				)
 			)
