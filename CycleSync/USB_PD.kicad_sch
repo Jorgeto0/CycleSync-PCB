@@ -2178,7 +2178,7 @@
 		)
 		(uuid "db10f4d7-93a4-45b4-9b4f-daf752f0702c")
 	)
-	(text "USB-PD / NO-PD POPULATION OPTIONS\n\nPD BUILD:\nPOPULATE ALL PD_OPTION COMPONENTS.\nDNP ALL NO_PD_OPTION COMPONENTS.\n\nNO-PD BUILD:\nDNP ALL PD_OPTION COMPONENTS.\nPOPULATE ALL NO_PD_OPTION COMPONENTS.\n\nC58 AND C59 ARE COMMON:\nPOPULATE IN BOTH BUILDS.\n\nUSB D+/D− BYPASS U5 AND CONNECT DIRECTLY\nBETWEEN THE HOST USB-C PORT AND MCU."
+	(text "USB-PD / NO-PD POPULATION OPTIONS\n\nPD BUILD:\nPOPULATE ALL PD_OPTION COMPONENTS.\nDNP ALL NO_PD_OPTION COMPONENTS.\n\nNO-PD BUILD:\nDNP ALL PD_OPTION COMPONENTS.\nPOPULATE ALL NO_PD_OPTION COMPONENTS.\n\nC58 AND C59 ARE COMMON:\nPOPULATE IN BOTH BUILDS.\n\nUSB D+/D− BYPASS U8 AND CONNECT DIRECTLY\nBETWEEN THE HOST USB-C PORT AND MCU."
 		(exclude_from_sim no)
 		(at 188.976 149.352 0)
 		(effects
@@ -4602,7 +4602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 207.9752 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -4695,7 +4695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 104.902 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -4866,7 +4866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 30.1752 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -5119,7 +5119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 232.1052 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -5496,7 +5496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 18.7452 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -5777,7 +5777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 220.6752 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -6026,7 +6026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 96.012 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -6119,7 +6119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 206.7052 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -6212,7 +6212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 54.3052 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6381,7 +6381,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 143.51 47.498 90)
 			(hide yes)
 			(show_name no)
@@ -6581,7 +6581,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 220.6752 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -6674,7 +6674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 131.572 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -6938,7 +6938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 234.6452 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7031,7 +7031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 232.1052 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -7351,7 +7351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b7c7310-04c3-474e-a13a-16b1a01d7b0c")
-		(property "Reference" "TP2"
+		(property "Reference" "TP16"
 			(at 96.52 57.023 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7373,7 +7373,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 99.06 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7412,7 +7412,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "TP2")
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -7530,7 +7530,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 219.4052 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -7701,7 +7701,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 207.9752 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -7794,7 +7794,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 243.5352 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -8041,7 +8041,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 88.9 154.432 90)
 			(hide yes)
 			(show_name no)
@@ -8211,7 +8211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 113.792 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -8304,7 +8304,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 141.732 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -8397,7 +8397,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 42.8752 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -8779,7 +8779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb84506e-c373-4729-b310-44ab417c65bf")
-		(property "Reference" "TP1"
+		(property "Reference" "TP15"
 			(at 80.01 58.293 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8801,7 +8801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 82.55 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -8840,7 +8840,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "TP1")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -8880,7 +8880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 122.682 100.33 90)
 			(hide yes)
 			(show_name no)
@@ -8971,7 +8971,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 154.432 90)
 			(hide yes)
 			(show_name no)
@@ -9220,7 +9220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 195.2752 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9311,7 +9311,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 142.24 57.658 90)
 			(hide yes)
 			(show_name no)
@@ -9382,7 +9382,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e527216c-5640-4554-bb9d-2a97463eb6b3")
-		(property "Reference" "TP3"
+		(property "Reference" "TP17"
 			(at 110.49 57.023 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9404,7 +9404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 113.03 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9443,7 +9443,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "TP3")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -9539,7 +9539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f00b3109-0eba-4b99-baa6-ab403114e44a")
-		(property "Reference" "TP4"
+		(property "Reference" "TP18"
 			(at 125.73 57.023 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9561,7 +9561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 128.27 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9600,7 +9600,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/5f3538da-ca0a-473f-9198-466d8964f21b"
-					(reference "TP4")
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -9640,7 +9640,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 247.3452 121.92 0)
 			(hide yes)
 			(show_name no)

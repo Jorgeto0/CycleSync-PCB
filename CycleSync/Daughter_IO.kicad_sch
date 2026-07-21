@@ -5809,7 +5809,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 38.1 30.988 90)
 			(hide yes)
 			(show_name no)
@@ -5947,7 +5947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fb7b590-bcac-4eed-b4cb-5d8ba32570e8")
-		(property "Reference" "U20"
+		(property "Reference" "U19"
 			(at 236.22 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5978,7 +5978,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
 			(at 236.22 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6023,7 +6023,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/afe1aeae-2b35-4a9c-80c8-33387c6b1d4e"
-					(reference "U20")
+					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -6402,7 +6402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-523"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 256.54 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -6551,7 +6551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c3e938c-e267-45e8-a972-3e6eac4f7d7b")
-		(property "Reference" "U19"
+		(property "Reference" "U18"
 			(at 270.51 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6616,7 +6616,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/afe1aeae-2b35-4a9c-80c8-33387c6b1d4e"
-					(reference "U19")
+					(reference "U18")
 					(unit 1)
 				)
 			)
@@ -6654,7 +6654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 101.6 28.448 90)
 			(hide yes)
 			(show_name no)
@@ -7051,7 +7051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-523"
+		(property "Footprint" "Diode_SMD:D_SOD-523"
 			(at 53.34 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7208,7 +7208,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 40.64 178.308 90)
 			(hide yes)
 			(show_name no)
@@ -7432,7 +7432,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 46.99 193.548 90)
 			(hide yes)
 			(show_name no)
@@ -7932,7 +7932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afb84855-c5af-431a-b7a4-5c2ebe7fa703")
-		(property "Reference" "U17"
+		(property "Reference" "U16"
 			(at 85.09 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7963,7 +7963,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
 			(at 85.09 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -7997,7 +7997,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/afe1aeae-2b35-4a9c-80c8-33387c6b1d4e"
-					(reference "U17")
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -8607,7 +8607,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8169131-6def-4b9f-83b1-a81cbb348409")
-		(property "Reference" "U18"
+		(property "Reference" "U17"
 			(at 74.93 107.696 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8672,7 +8672,7 @@
 		(instances
 			(project "CycleSync"
 				(path "/3f2cc6af-e67b-48ad-b391-ff7619611bd8/afe1aeae-2b35-4a9c-80c8-33387c6b1d4e"
-					(reference "U18")
+					(reference "U17")
 					(unit 1)
 				)
 			)
