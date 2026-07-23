@@ -10,8 +10,8 @@
 	)
 	(lib_symbols)
 	(rectangle
-		(start 132.08 22.86)
-		(end 186.69 36.83)
+		(start 154.432 106.426)
+		(end 209.042 120.396)
 		(stroke
 			(width 0)
 			(type default)
@@ -22,8 +22,8 @@
 		(uuid "325d1039-4fd6-4309-95dd-859834c7e445")
 	)
 	(rectangle
-		(start 210.82 71.12)
-		(end 256.54 87.63)
+		(start 237.49 148.336)
+		(end 283.21 164.846)
 		(stroke
 			(width 0)
 			(type default)
@@ -34,8 +34,8 @@
 		(uuid "b6a11667-51a9-48a0-91b5-197eea1d7c28")
 	)
 	(rectangle
-		(start 138.43 52.07)
-		(end 176.53 86.36)
+		(start 163.576 123.444)
+		(end 201.676 157.734)
 		(stroke
 			(width 0)
 			(type default)
@@ -46,8 +46,8 @@
 		(uuid "c5929d71-ca88-426c-ad6a-f55be72c8120")
 	)
 	(rectangle
-		(start 209.55 22.86)
-		(end 266.7 59.69)
+		(start 225.298 107.442)
+		(end 282.448 144.272)
 		(stroke
 			(width 0)
 			(type default)
@@ -59,7 +59,7 @@
 	)
 	(text "ASSEMBLY VARIANTS\n\n1. PD + LINE-IN:\n   PD_OPTION + LINE_IN_OPTION\n\n2. PD + PLAYBACK:\n   PD_OPTION ONLY\n\n3. NO-PD + LINE-IN:\n   NO_PD_OPTION + LINE_IN_OPTION\n\n4. NO-PD + PLAYBACK:\n   NO_PD_OPTION ONLY\n\nPD_OPTION AND NO_PD_OPTION ARE MUTUALLY EXCLUSIVE.\nPRIMARY FULL-FEATURE BUILD: PD + LINE-IN."
 		(exclude_from_sim no)
-		(at 238.252 41.148 0)
+		(at 254 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -69,7 +69,7 @@
 	)
 	(text "CONFORMAL COATING, NO-COAT AREAS\n\nALL CONNECTORS, SWITCHES, TEST POINTS,\nEEPROM RECOVERY PADS AND ANTENNA PADS.\n\nHAND-SOLDER ANT1 AFTER COATING."
 		(exclude_from_sim no)
-		(at 233.68 80.264 0)
+		(at 260.35 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -79,7 +79,7 @@
 	)
 	(text "FIXED CONFIGURATION / ADDRESSES\n\nTPS25751 I²Ct:\nADCIN1 = 0, ADCIN2 = 0\nSAFEMODE, 7-BIT ADDRESS 0x21\n\nPD EEPROM: 7-BIT ADDRESS 0x50\n\nPCM1862:\nMD0 = 0, MS/AD = 0\nI²C CONTROL, 7-BIT ADDRESS 0x4A\n\nLC76G:\nD_SEL DNP → UART INTERFACE"
 		(exclude_from_sim no)
-		(at 157.734 69.596 0)
+		(at 182.88 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -89,7 +89,7 @@
 	)
 	(text "VARIANT FIELD IS ASSEMBLY DOCUMENTATION ONLY.\n\nEXPORT A SEPARATE BOM AND POSITION FILE\nFOR EACH ASSEMBLY VARIANT.\nVERIFY EVERY POPULATE/DNP LINE BEFORE RELEASE."
 		(exclude_from_sim no)
-		(at 157.988 29.464 0)
+		(at 180.34 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
